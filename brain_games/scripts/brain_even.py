@@ -6,8 +6,7 @@ def random_number():
   return randint(1, 100)
 
 
-def first_question(): 
-    name = welcome_user()
+def first_question():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     
     for i in range(1, 4):  # Repite 3 veces
@@ -28,7 +27,8 @@ def first_question():
         print(f'Congratulations, {name}!')
 
 def main():
-    first_question() 
+    name = welcome_user()
+    first_question(name) 
    
 if __name__ == "__main__":
     main()
