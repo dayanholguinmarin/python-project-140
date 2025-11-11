@@ -27,3 +27,9 @@ def first_question():
     else:        
         print(f'Congratulations, {name}!')
 
+def main():
+    first_question() 
+   
+if __name__ == "__main__":
+    main()
+

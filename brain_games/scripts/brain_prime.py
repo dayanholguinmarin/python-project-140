@@ -2,7 +2,7 @@ from brain_games.cli import welcome_user
 from random import randint
 import prompt
 import math
-name = welcome_user()
+
 def is_prime(name):
     for i in range(1, 4): # Repite 3 
         random_number = randint(1, 100)
@@ -29,5 +29,12 @@ def is_prime(name):
             return
 
     print(f'Congratulations, {name}!')
+
+def main():
+    name = welcome_user()
+    is_prime(name)
+    
+if __name__ == "__main__":
+    main()
        
 

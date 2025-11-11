@@ -6,7 +6,7 @@ def random_math_number():
   number_1, number_2 = sample(range(1, 100), 2)
   return number_1, number_2
 
-name = welcome_user()
+
 def calculate(name):
     for i in range(1, 4):  # Repite  3 veces
         number_1, number_2 = random_math_number()  # dos numeros aleatorios
@@ -36,3 +36,10 @@ def calculate(name):
             return  
     
     print(f'Congratulations, {name}!')  
+
+def main():
+    name = welcome_user()
+    calculate(name)
+    
+if __name__ == "__main__":
+    main()

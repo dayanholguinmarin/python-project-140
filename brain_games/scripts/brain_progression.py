@@ -3,7 +3,6 @@ from random import randint
 import prompt
 
 
-name = welcome_user()
 def progression(name):
     for i in range(1, 4): # Repite 3 veces
         progresion_items = randint(5, 10)
@@ -31,3 +30,11 @@ def progression(name):
             return
     
     print(f'Congratulations, {name}!')
+
+
+def main():
+    name = welcome_user()
+    progression(name)
+    
+if __name__ == "__main__":
+    main()

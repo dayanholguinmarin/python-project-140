@@ -11,7 +11,6 @@ def gcd(a, b):
                 a, b = b, a % b    # algoritmo de Euclides para sacar el MCD
             return a
 
-name = welcome_user()
 
 def mcd(name):
     for i in range(1, 4):  # Repite  3 veces
@@ -31,3 +30,10 @@ def mcd(name):
             return
     
     print(f'Congratulations, {name}!')  
+
+def main():
+    name = welcome_user()
+    mcd(name)
+    
+if __name__ == "__main__":
+    main()

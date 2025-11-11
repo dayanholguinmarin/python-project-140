@@ -36,9 +36,9 @@ Instrucciones claras de instalación y ejecución.
 
 
 links ascinema
-brain calc
-brain even
-brain gcd
-brain prime
-brain progresion
+brain calc: https://asciinema.org/a/3yxgpg3Tk7NJCs01M3E7c4mg1
+brain even: https://asciinema.org/a/lHofeMpSK62gxPuzqb4chqwmI
+brain gcd: https://asciinema.org/a/sPrlT3gHpflye8EJLULixxPcC
+brain prime: https://asciinema.org/a/JkLlNLkM2o6UQDWriat8Vgtrl
+brain progresion: https://asciinema.org/a/UohrmOUdllx9d4YPNeWst7kEMS
 
