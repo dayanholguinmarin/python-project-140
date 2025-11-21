@@ -3,14 +3,15 @@ from random import randint
 import prompt
 import math
 
+
 def is_prime(name):
-    for i in range(1, 4): # Repite 3 
+    for i in range(1, 4):
         random_number = randint(1, 100)
 
         for i in range(2, int(math.sqrt(random_number)) + 1):
             if random_number % i == 0:
                 correct_answer = 'no'
-                break            
+                break
         else:
             correct_answer = 'yes'
 
@@ -24,17 +25,23 @@ def is_prime(name):
         if question == correct_answer:
             print('Correct!')
         else:
-            print(f'{question} is wrong answer ;(. Correct answer was {correct_answer}.')
+            print((
+                f"'{question}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
+            ))
             print(f'Let\'s try again, {name}!')
             return
 
     print(f'Congratulations, {name}!')
 
+
 def main():
     name = welcome_user()
     is_prime(name)
-    
+
+
 if __name__ == "__main__":
+
     main()
        
 
