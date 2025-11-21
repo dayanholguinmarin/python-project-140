@@ -14,7 +14,6 @@ def first_question(name):
         is_even = number % 2 == 0 # aqui se si es par o impar el divisible
         VALID_ANSWER = ['yes', 'no']
         correct_answer = 'yes' if is_even else 'no'
-        
         question = prompt.string(f'Question: {number}')
 
         
@@ -22,9 +21,14 @@ def first_question(name):
             break
             
         if question == correct_answer:
-            print(f'¡Correct!')
-    else:        
-        print(f'Congratulations, {name}!')
+            print(f'Correct!')
+        
+        else:
+            print(f'{question} is wrong answer ;(. Correct answer was {correct_answer}.')
+            print(f"Let's try again, {name}!")
+            return  
+     
+    print(f'Congratulations, {name}!')
 
 def main():
     name = welcome_user()
