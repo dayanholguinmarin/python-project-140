@@ -17,12 +17,11 @@ def first_question(name):
         correct_answer = 'yes' if is_even else 'no'
         question = prompt.string(f'Question: {number}')
 
-
         if question not in VALID_ANSWER:
             break
 
         if question == correct_answer:
-            print(f'Correct!')
+            print('Correct!')
 
         else:
             print((

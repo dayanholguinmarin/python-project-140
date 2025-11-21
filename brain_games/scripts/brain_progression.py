@@ -10,8 +10,8 @@ def progression(name):
         progresion_step = randint(1, 5)
         empty_list = []
         for j in range(progresion_items):
-          current_number = progresion_Number + j * progresion_step
-          empty_list.append(current_number)
+            current_number = progresion_Number + j * progresion_step
+            empty_list.append(current_number)
 
         missing_index = randint(0, len(empty_list) - 1)
         correct_answer = empty_list[missing_index]

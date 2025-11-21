@@ -1,5 +1,5 @@
 from brain_games.cli import welcome_user
-from random import sample, choice
+from random import sample
 import prompt
 
 

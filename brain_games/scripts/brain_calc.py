@@ -25,11 +25,10 @@ def calculate(name):
             case _:
                 correct_answer = number_1 + number_2
 
-
         print('What is the result of the expression?')
         user_answer = prompt.string(f'Question: {question}')
 
-        if  int(user_answer) == correct_answer:
+        if int(user_answer) == correct_answer:
             print('Correct!')
         else:
             print((
